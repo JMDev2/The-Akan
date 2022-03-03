@@ -1,0 +1,17 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body, html{
+    height: 100%;
+}
+body{
+    background-image: url(https://media.istockphoto.com/photos/people-at-the-memorial-ceremony-dedicated-to-the-queen-mother-of-the-picture-id822837814?s=612x612);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
