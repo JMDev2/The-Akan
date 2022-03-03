@@ -7,11 +7,22 @@
 }
 body, html{
     height: 100%;
-}
+    width: 100%;
+}  
 body{
-    background-image: url(https://media.istockphoto.com/photos/people-at-the-memorial-ceremony-dedicated-to-the-queen-mother-of-the-picture-id822837814?s=612x612);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNffZ2QcYb0bCYRE2w6IhdOKbOeaYDprwVnw&usqp=CAU);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100%;
+}
+fieldset{
+    border: 2px solid black;
+    text-align: left;
+    width: 50%;
+    height: 70%;
+    position: relative;
+    top: 90px;
+}
+select option{
+    text-align: center;
 }
