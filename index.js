@@ -1,27 +1,48 @@
 let form = document.getElementById("form");
-let myYear = document.getElementById("year");
-let myMonth = document.getElementById("month");
-let myDay = document.getElementById("day");
+let theDay = document.getElementById("day");
+let theMonth = document.getElementById("month");
+let theYear = document.getElementById("year");
+// let myDay = document.getElementById("day");
 
 
 
 let displayInfo = document.querySelector(".display")
 let displayBirthday = document.querySelector(".birthday");
-let displayGender = document.querySelector(".Yourgender");
+let displayGender = document.querySelector(".gender");
 let displayAkan = document.querySelector(".akaname");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
+    compareNames()
+
     let userGender = form.gender.value;
 
     console.log(`
-    ${myYear.value}
-    ${myMonth.value}
-    ${myDay.value}
+    ${theDay.value}
+    ${theMonth.value}
+    ${theYear.value}
     ${userGender}`);
 
-    displayBirthday.innerHTML = `You were born on: ${myDay.value} : ${myMonth.value} :${myYear.value}` ;
-    displayGender.innerHTML = `Your Gender is: ${userGender}`;
+
+
+    
+
+    displayBirthday.innerHTML = `Your birth date is: ${theDay.value} ${theMonth.value} ${theYear.value}` ;
+    displayGender.innerHTML = `You Gender is: ${userGender}`;
 
 });
+
+
+function compareNames(){
+    var wkday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
+    var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
+
+    var date = new Date(year + ", " + month + ", " + day)
+    var dayOfWeek = wkday[date.getDay()];
+
+    
+
+
+}
