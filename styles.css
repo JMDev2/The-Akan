@@ -4,8 +4,6 @@
     margin: 0;
     box-sizing: border-box;
     
-    
-    
 }
 html{
     height: 100vh;
@@ -81,12 +79,8 @@ h2{
     border: 1px solid black;
     height: 80px;
     width: 40%;
-    align-items: center;
-    position: relative;
-    left: 30%;
-    top: 25%;
     border-radius: 10px;
-    /* margin-top: -5%; */
+    
 }
 footer{
     height: 6%;
@@ -104,6 +98,6 @@ button{
     left: -15%;
     border-radius: 0px 60px 0px 60px;
 }
-p{
+/* p{
     margin-top: 2%;
-}
+} */
