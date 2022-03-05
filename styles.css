@@ -76,11 +76,15 @@ h2{
     color: white;
 }
 .display{
-    border: 1px solid black;
+    border: 10px solid black;
     height: 80px;
     width: 40%;
     border-radius: 10px;
-    
+    text-align: center;
+    position: relative;
+    left: 30%;
+    top: 20%;
+    background-color: aqua;
 }
 footer{
     height: 6%;
@@ -98,6 +102,3 @@ button{
     left: -15%;
     border-radius: 0px 60px 0px 60px;
 }
-/* p{
-    margin-top: 2%;
-} */
