@@ -51,20 +51,30 @@ body{
     text-align: center;
     
 } 
-h2,h1, p,.dob, .gender, .submit{
+form{
     position: relative;
-    top: 5%;
-    padding: 10px;
+    top: 15%;
+    
 }
+
 img{
     position: relative;
     top: 35%;
 }
+.gender{
+    padding: 10px;
+}
+h2{
+    position: relative;
+    top: 10%;
+}
 .submit{
-    width: 50%;
+    margin-top: 20px;
+    height: 40%;
+    width: 40%;
     background-color: blue;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
 }
 .display{
@@ -76,6 +86,7 @@ img{
     left: 30%;
     top: 25%;
     border-radius: 10px;
+    /* margin-top: -5%; */
 }
 footer{
     height: 6%;
@@ -92,4 +103,7 @@ button{
     width: 60%;
     left: -15%;
     border-radius: 0px 60px 0px 60px;
+}
+p{
+    margin-top: 2%;
 }

@@ -8,7 +8,7 @@ let theYear = document.getElementById("year");
 
 let displayInfo = document.querySelector(".display")
 let displayBirthday = document.querySelector(".birthday");
-let displayGender = document.querySelector(".gender");
+let displayGender = document.querySelector(".Yourgender");
 let displayAkan = document.querySelector(".akaname");
 
 form.addEventListener("submit", (e) => {
@@ -41,7 +41,6 @@ function compareNames(){
 
     var date = new Date(year + ", " + month + ", " + day)
     var dayOfWeek = wkday[date.getDay()];
-
     
 
 
