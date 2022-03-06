@@ -91,10 +91,11 @@ h2{
     top: 20%;
     background-color: white;
 }
-footer{
+.footer{
     height: 6%;
-    text-align: center;
-}
+    /* text-align: center;
+    /* margin-left: 40%; */
+} */
 
 marquee{
     font-family: 'Permanent Marker', cursive;

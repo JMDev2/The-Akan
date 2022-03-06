@@ -30,6 +30,10 @@ form.addEventListener("submit", (e) => {
     }
     if (theYear.value === ""){
         alert("Please enter the Year you were born");
+    }else{
+        if(theYear.value <= 0000 || theYear.value >2100){
+            alert("Enter a valid year between 0000 and 2100")
+        }
     }
     if (userGender === ""){
         alert("Please check your gender");
