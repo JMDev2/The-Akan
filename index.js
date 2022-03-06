@@ -15,9 +15,18 @@ form.addEventListener("submit", (e) => {
 
     if (theDay.value === ""){
         alert("Please enter the day you were born");
+    }else{
+        if(theDay.value <= 0 || theDay.value >31){
+            alert("Enter a valid date")
+        }
     }
+    
     if (theMonth.value === ""){
         alert("Please enter the Month you were born");
+    }else{
+        if(theMonth.value <= 0 || theMonth.value >12){
+            alert("Enter a valid Month")
+        }
     }
     if (theYear.value === ""){
         alert("Please enter the Year you were born");
@@ -25,15 +34,14 @@ form.addEventListener("submit", (e) => {
     if (userGender === ""){
         alert("Please check your gender");
     }
+
+  
  
 
     var akaName = compareNames(theYear.value, theMonth.value, theDay.value, userGender)
 
     displayAkan.innerHTML = `Your Akan name is: ${akaName}`;
 });
-function myFunction() {
-    document.getElementById("form").reset();
-  }
 
 
 function compareNames(year, month, day, gender){
@@ -42,13 +50,19 @@ function compareNames(year, month, day, gender){
     var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
 
     if (gender === "male"){
-        var date = new Date(year, month, day)
+        var date = new Date(parseInt(year), (parseInt(month)-1), parseInt(day))
+        
         var dayOfWeek = wkday[date.getDay()];
+        
      return male[date.getDay()]
     }else{
-        var date = new Date(year, month,day)
+        var date = new Date(parseInt(year), (parseInt(month)-1), parseInt(day))
         var dayOfWeek = wkday[date.getDay()];
         return female[date.getDay()]
     }
 
 }
+
+function myFunction() {
+    document.getElementById("form").reset();
+  }
