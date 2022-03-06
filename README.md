@@ -21,6 +21,6 @@ https://github.com/JOSEPHMAINA1995/The-Akan.git
 1. Git
 1. Bootstrap
 ### Live Site
-View [Live] 
+View [Live] https://josephmaina1995.github.io/The-Akan/
 ### Licence
 This project is under the  [MIT](license) license
